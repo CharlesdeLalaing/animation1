@@ -1,0 +1,47 @@
+div {
+  animation: mymove 2s infinite;
+  animation-delay: 2s;
+}
+
+div:hover{
+  animation-play-state:paused;
+}
+
+
+@keyframes mymove {
+  0% {
+    left: 0%;
+    top: 0px;
+  }
+  25% {
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    left: 0%;
+    top: 200px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+#bounce-title {
+  position: relative;
+  animation: rebond 1s infinite alternate;
+}
+
+@keyframes rebond {
+  0% {
+    bottom: 100px;
+    transform: scaleY(1);
+  }
+  100% {
+    bottom: 0%;
+    transform: scaleY(0.5);
+  }
+}
